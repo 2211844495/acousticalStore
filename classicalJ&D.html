@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J & D Classical Guitars</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+</head>
+<style>
+         .header {
+        position: absolute;
+    left: 30px;
+    top: 128px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 78px;
+    text-align: left;
+        color: #FFFFFF;
+    
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+    .brands {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 500px;
+      background-color: #411e0c;
+      overflow: hidden;
+      position: absolute;
+      top: 500px;
+      left: 0;
+     
+    }
+    .page {
+      position: absolute;
+    background-color: #3c1503;
+    height: 2000px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+    .brandsheader {
+      font-family: 'Montserrat';
+      color: white;
+      position: relative;
+      left: 10px;
+    }
+    .brands a {
+      font-family: 'Montserrat';
+      display: block;
+      color: rgb(194, 194, 194);
+      padding: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+    .brands a:hover {
+      background-color: #321100;
+    }
+    .active {
+      background-color: #321100;
+    }
+    .classicalpage {
+      background-color: #321100;
+      width: 1110px;
+      height: 700px;
+      position: absolute;
+      top: 500px;
+      left: 400px;
+      overflow: hidden;
+      
+    }
+    .header2 {
+      position: absolute;
+      color: #FFFFFF;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      position: relative;
+      left: 30px;
+      font-size: 50px;
+    }
+    .First {
+      width: 195px;
+      position: absolute;
+      left: 50px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .First:hover {
+      width: 196px;
+      background-color: #411e0c;
+    }
+    .fstheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      left: 90px;
+      top: 480px;
+    }
+    .price1 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      top: 625px;
+      left: 110px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .Second {
+      width: 190px;
+      position: absolute;
+      left: 350px;
+      top: 120px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .Second:hover {
+      width: 191px;
+      background-color: #411e0c;
+    }
+    .sndheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      top: 430px;
+      left: 370px;
+    }
+    .price2 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      font-size: 15px;
+      text-align: center;
+      top: 625px;
+      left: 410px;
+    }
+    .Third {
+      width: 197px;
+      position: absolute;
+      left: 640px;
+      top: 110px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .Third:hover {
+      width: 198px;
+      background-color: #411e0c;
+    }
+    .trdheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      top: 380px;
+      left: 600px;
+    }
+    .price3 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      font-size: 15px;
+      text-align: center;
+      top: 625px;
+      left: 710px;
+    }
+    .active1 {
+      background-color: #411e0c ;
+    }
+
+</style>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <div class="page"> 
+  </div>
+  
+  <img class="bg" src="images/bg2.jpg">
+  <h1 class = "header">“I believe every guitar player inherently <br>has something unique about their playing.”<br>
+
+    - Jimmy Page. </h1>
+  <a href="index.html"><h2 class ="name">Acoustical</h2> </a>
+    <img class = "logo" src="images/logo.png">
+    <script src="app.js" ></script>
+    <div class = "topnav">
+      <a href="Contact">Contact</a>
+      <a href="locations">Locations</a>
+    </div>
+    <a class = "shoppingcart" href="#shoppingcart"><img src="images/shoppingcart.png"></a>
+     <input class="searchbar" type="text" placeholder="   Search here..."> 
+     <div class="guitars">
+       <h1 class="guitarsheader">Guitars : </h1>
+      <a class="active1" href="classic.html">Classical Guitars</a>
+      <a href = "acoustic.html">Acoustic Guitars</a>
+      <a href="electric.html">Electric Guitars</a>
+      <a href="ukeleles.html">Ukeleles</a>
+      <a href="accessories.html">Accessories</a>
+     </div>
+
+     <div class="brands">
+       <h1 class="brandsheader">Brands :</h1>
+       <a class = "active" href="classicalJ&D.html">J & D</a>
+       <a href="classicalyamaha.html">Yamaha</a>
+       <a href="#brand1">Ortega</a>
+       <a href="#brand4">Alhambra</a>
+     </div>
+
+
+     <div class="classicalpage">
+      <h1 class="header2">J & D guitars :</h1>
+      <div >
+        <a href="#1"><img class="First"src="images\classical\J & D\j&d.CG-1.png"></a>
+        <h2 class="fstheader">J & D DG-1</h2>
+        <h3 class="price1">€ 88.60</h3>
+      </div>
+      <div>
+        <a href="#2"><img class="Second" src="images\classical\J & D\J&D.C-200.png"></a>
+        <h2 class="sndheader">J & D C-200</h2>
+        <h3 class="price2">€ 90.00 </h3>
+      </div>
+     </div>
+</body>
+
+</html>

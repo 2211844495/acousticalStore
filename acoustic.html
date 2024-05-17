@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acoustic Guitars</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+</head>
+<style>
+  
+        .header {
+        position: absolute;
+    left: 30px;
+    top: 128px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 78px;
+    text-align: left;
+        color: #FFFFFF;
+    
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+  
+    .brands {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 500px;
+      background-color: #411e0c;
+      overflow: hidden;
+      position: absolute;
+      top: 500px;
+      left: 0;
+     
+    }
+    .page {
+      position: absolute;
+    background-color: #3c1503;
+    height: 2000px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+    .brandsheader {
+      font-family: 'Montserrat';
+      color: white;
+      position: relative;
+      left: 10px;
+    }
+    .brands a {
+      font-family: 'Montserrat';
+      display: block;
+      color: rgb(194, 194, 194);
+      padding: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+    .brands a:hover {
+      background-color: #321100;
+    }
+    .classicalpage {
+      background-color: #321100;
+      width: 1110px;
+      height: 700px;
+      position: absolute;
+      top: 500px;
+      left: 400px;
+      overflow: hidden;
+      
+    }
+    .header2 {
+      position: absolute;
+      color: #FFFFFF;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      position: relative;
+      left: 30px;
+      font-size: 50px;
+    }
+    .First {
+      width: 200px;
+      position: absolute;
+      top: 100px;
+      left: 60px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .First:hover {
+      width: 201px;
+      background-color: #411e0c;
+    }
+    .fstheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      left: 85px;
+      top: 480px;
+    }
+    .price1 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      top: 625px;
+      left: 125px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .Second {
+      width: 210px;
+      position: absolute;
+      left: 350px;
+      top: 100px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .Second:hover {
+      width: 211px;
+      background-color: #411e0c;
+    }
+    .sndheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      top: 430px;
+      left: 350px;
+    }
+    .price2 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      font-size: 15px;
+      text-align: center;
+      top: 625px;
+      left: 420px;
+    }
+    .Third {
+      width: 220px;
+      position: absolute;
+      left: 640px;
+      top: 100px;
+      border-radius: 20px;
+      transition: 0.5s;
+    }
+    .Third:hover {
+      width: 221px;
+      background-color: #411e0c;
+    }
+    .trdheader {
+      font-family: 'Montserrat';
+      color: rgb(221, 221, 221);
+      position: relative;
+      top: 380px;
+      left: 650px;
+    }
+    .price3 {
+      font-family: 'Montserrat';
+      color: rgb(148, 148, 148);
+      position: absolute;
+      font-size: 15px;
+      text-align: center;
+      top: 625px;
+      left: 720px;
+    }
+</style>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <div class="page"> 
+  </div>
+  
+  <img class="bg" src="images/bg3.jpg">
+  <h1 class = "header">"Someone told me the smile on my face<br>gets bigger when I play the guitar."<br>
+
+    - Niall Horan.</h1>
+  <a href="index.html"><h2 class ="name">Acoustical</h2> </a>
+    <img class = "logo" src="images/logo.png">
+    <script src="app.js" ></script>
+    <div class = "topnav">
+      <a href="Contact">Contact</a>
+      <a href="locations">Locations</a>
+    </div>
+    <a class = "shoppingcart" href="#shoppingcart"><img src="images/shoppingcart.png"></a>
+     <input class="searchbar" type="text" placeholder="   Search here..."> 
+     <div class="guitars">
+       <h1 class="guitarsheader">Guitars : </h1>
+      <a  href="classic.html">Classical Guitars</a>
+      <a class="active" href = "acoustic.html">Acoustic Guitars</a>
+      <a href="electric.html">Electric Guitars</a>
+      <a href="ukeleles.html">Ukeleles</a>
+      <a href="accessories.html">Accessories</a>
+     </div>
+
+
+
+     <div class="brands">
+      <h1 class="brandsheader">Brands :</h1>
+      <a href="classicalJ&D.html">Red Hill</a>
+      <a href="classicalyamaha.html">Yamaha</a>
+      <a href="#brand1">Squier</a>
+      <a href="#brand4">Frame</a>
+    </div>
+
+
+    <div class="classicalpage">
+     <h1 class="header2">Check Our New Arrivals!</h1>
+     <div >
+       <a href="#1"><img class="First"src="images\acoustic\Redhill.d-1.png"></a>
+       <h2 class="fstheader">Red Hill D-1</h2>
+       <h3 class="price1">€ 55.50</h3>
+     </div>
+     <div>
+       <a href="#2"><img class="Second" src="images/acoustic/Squier.SA-105CE.png"></a>
+       <h2 class="sndheader">Squier SA-105CE</h2>
+       <h3 class="price2">€ 93.30</h3>
+     </div>
+     <div>
+       <a href="#3"><img class="Third" src="images/acoustic/Fame A-11 B-Ware.png"></a>
+       <h2 class="trdheader">Fame A-11 B-Ware</h2>
+       <h3 class="price3">€ 100.00</h3>
+     </div>
+
+
+</body>
+
+</html>
